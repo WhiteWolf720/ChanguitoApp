@@ -8,7 +8,7 @@ void main() {
     (
       debugShowCheckedModeBanner: false,
       title: 'Monkey Delivery',
-      initialRoute: '/home',
+      initialRoute: '/',
       routes: routes,
       theme: ThemeData(
         primaryColor: Color.fromRGBO(252, 96, 17, 1.0),
