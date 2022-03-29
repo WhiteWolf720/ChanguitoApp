@@ -113,8 +113,7 @@ class LoginPage extends StatelessWidget
              )
             ]
          ),
-         Column
-          (
+         Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>
             [
