@@ -76,7 +76,7 @@ Container(
                               decoration: InputDecoration(
                                   prefixIcon: Icon(Icons.email),
                                   labelText: 'Email',
-                                  hintText: 'diego.dedsec720@gmail.com')),
+                                  hintText: 'diegooy.ti20@utsjr.edu.mx')),
                         ),
                         const SizedBox(
                           height: 70.0,

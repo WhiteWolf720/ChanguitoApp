@@ -40,7 +40,7 @@ class ResetPass extends StatelessWidget {
                               fontSize: 15.0),
                         ),
                         const Text(
-                          'link para crear una nueva contrasela via correo',
+                          'link para crear una nueva contraseña via correo',
                           style: TextStyle(
                               color: Color.fromRGBO(124, 125, 126, 1.0),
                               fontSize: 15.0),
