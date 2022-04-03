@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 
 class ResetCode extends StatelessWidget {
   const ResetCode({Key? key}) : super(key: key);
@@ -7,6 +8,12 @@ class ResetCode extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final _height = MediaQuery.of(context).size.height;
+
+var maskFormatter = new MaskTextInputFormatter(
+  mask: '*-*-*-*', 
+  filter: { "*": RegExp(r'[0-9]') },
+  type: MaskAutoCompletionType.lazy
+);
 
     return Scaffold(
       body: Stack(
@@ -62,7 +69,15 @@ class ResetCode extends StatelessWidget {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(25.0),
                               border: Border.all(color: Colors.grey)),
-                          child: const TextField(
+                          child: TextField(
+                            keyboardType: TextInputType.number,
+                            inputFormatters: [
+                              maskFormatter,
+                              FilteringTextInputFormatter.allow(
+                                RegExp('[0-9 -]')
+                              ),
+                              LengthLimitingTextInputFormatter(8),
+                            ],
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   color: Color.fromRGBO(124, 125, 126, 1.0),
