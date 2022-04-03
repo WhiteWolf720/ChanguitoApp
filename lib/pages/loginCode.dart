@@ -9,11 +9,10 @@ class ResetCode extends StatelessWidget {
   Widget build(BuildContext context) {
     final _height = MediaQuery.of(context).size.height;
 
-var maskFormatter = new MaskTextInputFormatter(
-  mask: '*-*-*-*', 
-  filter: { "*": RegExp(r'[0-9]') },
-  type: MaskAutoCompletionType.lazy
-);
+    var maskFormatter = new MaskTextInputFormatter(
+        mask: '*-*-*-*',
+        filter: {"*": RegExp(r'[0-9]')},
+        type: MaskAutoCompletionType.lazy);
 
     return Scaffold(
       body: Stack(
@@ -70,14 +69,13 @@ var maskFormatter = new MaskTextInputFormatter(
                               borderRadius: BorderRadius.circular(25.0),
                               border: Border.all(color: Colors.grey)),
                           child: TextField(
-                            keyboardType: TextInputType.number,
-                            inputFormatters: [
-                              maskFormatter,
-                              FilteringTextInputFormatter.allow(
-                                RegExp('[0-9 -]')
-                              ),
-                              LengthLimitingTextInputFormatter(8),
-                            ],
+                              keyboardType: TextInputType.number,
+                              inputFormatters: [
+                                maskFormatter,
+                                FilteringTextInputFormatter.allow(
+                                    RegExp('[0-9 -]')),
+                                LengthLimitingTextInputFormatter(8),
+                              ],
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   color: Color.fromRGBO(124, 125, 126, 1.0),
@@ -108,7 +106,6 @@ var maskFormatter = new MaskTextInputFormatter(
                       ],
                     ),
                   )
-                  
                 ]),
               )
             ],

@@ -9,11 +9,10 @@ class SignUp extends StatelessWidget {
   Widget build(BuildContext context) {
     final _height = MediaQuery.of(context).size.height;
 
-var maskFormatter = new MaskTextInputFormatter(
-  mask: '###-###-#####', 
-  filter: { "#": RegExp(r'[0-9]') },
-  type: MaskAutoCompletionType.lazy
-);
+    var maskFormatter = new MaskTextInputFormatter(
+        mask: '###-###-#####',
+        filter: {"#": RegExp(r'[0-9]')},
+        type: MaskAutoCompletionType.lazy);
 
     return Scaffold(
       body: Stack(
@@ -66,7 +65,7 @@ var maskFormatter = new MaskTextInputFormatter(
                         const SizedBox(
                           height: 75.0,
                         ),
-Container(
+                        Container(
                           padding: const EdgeInsets.symmetric(horizontal: 20.0),
                           margin: const EdgeInsets.symmetric(horizontal: 20.0),
                           decoration: BoxDecoration(
@@ -81,21 +80,20 @@ Container(
                         const SizedBox(
                           height: 70.0,
                         ),
-Container(
+                        Container(
                           padding: const EdgeInsets.symmetric(horizontal: 20.0),
                           margin: const EdgeInsets.symmetric(horizontal: 20.0),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(25.0),
                               border: Border.all(color: Colors.grey)),
                           child: TextField(
-                            keyboardType: TextInputType.number,
-                            inputFormatters: [
-                              maskFormatter,
-                              FilteringTextInputFormatter.allow(
-                                RegExp('[0-9 -]')
-                              ),
-                              LengthLimitingTextInputFormatter(12),
-                            ],
+                              keyboardType: TextInputType.number,
+                              inputFormatters: [
+                                maskFormatter,
+                                FilteringTextInputFormatter.allow(
+                                    RegExp('[0-9 -]')),
+                                LengthLimitingTextInputFormatter(12),
+                              ],
                               decoration: InputDecoration(
                                   prefixIcon: Icon(Icons.phone),
                                   labelText: 'Mobile',
@@ -129,7 +127,8 @@ Container(
                               decoration: const InputDecoration(
                                   prefixIcon: Icon(Icons.location_on),
                                   labelText: 'Adress',
-                                  hintText: 'Av. La Palma No. 125 Vista Hermosa, San Juan del Río, Qro')),
+                                  hintText:
+                                      'Av. La Palma No. 125 Vista Hermosa, San Juan del Río, Qro')),
                         ),
                         const SizedBox(
                           height: 70.0,

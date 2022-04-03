@@ -101,21 +101,27 @@ class LoginMethods extends StatelessWidget {
                                     fontSize: 18.0, color: Colors.white)),
                           ),
                         ),
-                        const SizedBox(height: 75.0,),
+                        const SizedBox(
+                          height: 75.0,
+                        ),
                         const Text(
                           'Olvidaste tu contraseña?',
                           style: TextStyle(
                               color: Color.fromRGBO(124, 125, 126, 1.0),
                               fontSize: 18.0),
                         ),
-                        const SizedBox(height: 100.0,),
+                        const SizedBox(
+                          height: 100.0,
+                        ),
                         const Text(
                           'O puedes iniciar sesion con:',
                           style: TextStyle(
                               color: Color.fromRGBO(124, 125, 126, 1.0),
                               fontSize: 18.0),
                         ),
-                        const SizedBox(height: 30.0,),
+                        const SizedBox(
+                          height: 30.0,
+                        ),
                         Container(
                           width: double.infinity,
                           height: 55.0,
@@ -123,8 +129,7 @@ class LoginMethods extends StatelessWidget {
                               const EdgeInsets.only(left: 40.0, right: 40.0),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
-                              color: Color.fromRGBO(66, 103, 178, 1.0)
-                              ),
+                              color: Color.fromRGBO(66, 103, 178, 1.0)),
                           child: const TextButton(
                             onPressed: null,
                             child: Text('Facebook',
@@ -132,7 +137,7 @@ class LoginMethods extends StatelessWidget {
                                     fontSize: 18.0, color: Colors.white)),
                           ),
                         ),
-                                                const SizedBox(
+                        const SizedBox(
                           height: 30.0,
                         ),
                         const SizedBox(
@@ -153,7 +158,9 @@ class LoginMethods extends StatelessWidget {
                                     fontSize: 18.0, color: Colors.white)),
                           ),
                         ),
-                        const SizedBox(height: 100.0,),
+                        const SizedBox(
+                          height: 100.0,
+                        ),
                         const Text(
                           'No tienes una cuenta?',
                           style: TextStyle(

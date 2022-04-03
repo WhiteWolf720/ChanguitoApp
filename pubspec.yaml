@@ -67,6 +67,9 @@ flutter:
      - lib/src/images/face.png
      - lib/src/images/subtraction.png
      - lib/src/images/subtraction1.png
+     - lib/src/images/carrusel1.png
+     - lib/src/images/carrusel2.png
+     - lib/src/images/carrusel3.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
