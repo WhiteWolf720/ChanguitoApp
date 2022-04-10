@@ -70,6 +70,11 @@ flutter:
      - lib/src/images/carrusel1.png
      - lib/src/images/carrusel2.png
      - lib/src/images/carrusel3.png
+     - lib/src/images/burger.png
+     - lib/src/images/visa.png
+     - lib/src/images/paypal.png
+     - lib/src/images/mapa.png
+     - lib/src/images/gracias.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
